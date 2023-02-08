@@ -1,0 +1,31 @@
+<div class="container form-box mt-4 py-4">
+<div class="d-flex justify-content-center">
+  <h1 class="form-heading text-light font-weight-bold mb-4">Register</h1>
+</div>
+<div class="d-flex justify-content-center">
+    <div class="w-75">
+        <form #userRegistration="ngForm" (ngSubmit)="onRegistration(userRegistration)">
+          <div class="alert alert-success" role="alert" *ngIf ="(message)==='Employee Added.'; else error" >{{message}}</div>
+          <ng-template #error><div class="alert alert-danger" role="alert" *ngIf="(message)==='email already in use.';else error2">{{message}}</div>
+          </ng-template>
+          <ng-template #error2><div class="alert alert-danger" role="alert" *ngIf="(message)==='There is an internal error.';else error3">{{message}}</div>
+          </ng-template>
+          <ng-template #error3><div class="alert alert-danger" role="alert" *ngIf="(error_message)==='Enter the correct email or password.'">{{error_message}}</div>
+          </ng-template>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label text-light">Email address</label>
+              <input type="email" class="form-control " id="contactemail"   name="email" ngModel email="true" required />
+
+           </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label text-light">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" ngModel name="password"required />
+
+            </div>
+            <span class="text-light lead pe-2">Already a user?</span> <a href="/login">Log In</a><br><br>
+            <button class="btn btn-outline-light" style="margin: 10px;" type="submit" name="form-submit">Submit</button>
+          </form>
+    </div>
+</div>
+</div>

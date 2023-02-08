@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --bgprimary: #1B2A32; 
+  }
+  body {
+    background-color: var(--bgprimary);
+  }
+  ul{
+    list-style-type: none;
+  }
+  a{
+    text-decoration: none;
+  }
+.form-box{
+  border: 5px solid #fff;
+  border-radius: 5%;
+  width: 40%;
+}
+.form-heading{
+font-size: 80px !important;
+text-decoration: underline;
+}

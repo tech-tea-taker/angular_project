@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-success d-flex flex-row-reverse">
+  <button style="margin: 10px; margin-right: 20px;" type="button" class="btn btn-danger"  (click)="onLogout()">Logout</button>
+  <button style="margin: 10px; margin-right: 20px;" type="button" class="btn btn-primary " routerLink="/login/employee_after_login/getAll" >Show All</button>
+
+</nav>
+<div class="d-flex justify-content-center mt-4">
+  
+  <form  #add="ngForm" (ngSubmit)="addingEmp(add)">
+    <div class="alert alert-success" role="alert" *ngIf="(message)==='added'; else error"><h3>Successful</h3></div>
+    <ng-template #error><div class="alert alert-danger" role="alert" *ngIf="(message)==='Enter the valid email or phone no.';else error2">{{message}}</div>
+    </ng-template>
+    <ng-template #error2><div class="alert alert-danger" role="alert" *ngIf="(message)==='null'"><h3>already employee added</h3></div>
+    </ng-template>
+    <div class="mb-3">
+      <label class="form-label text-light" for="">name:  </label>
+      <input class="form-control" type="text"  ngModel name="name">
+    </div >
+    <div class="mb-3">
+      <label class="form-label text-light" for="">email: </label>
+      <input class="form-control" type="text" ngModel name="email">
+    </div>
+    <div class="mb-3">
+      <label class="form-label text-light" for="">phone no:  </label>
+      <input class="form-control" type="text" ngModel name="phone_no">
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+ 

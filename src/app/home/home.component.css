@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.logo{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 10px;
+}
+
+.hero{
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.anime{
+    height: 100px;
+    width: 100px;
+    background: rgb(200, 85, 200);
+    border-radius: 50%;
+    animation-name: box;
+    animation-duration: 4s;
+    animation-iteration-count: 100;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 25px;
+    color: white;
+   
+}
+@keyframes box {
+    0%{transform: translateY(0px);}
+    25%{transform: translateY(-50px);}
+    50%{transform: translateY(0px);}
+    75%{transform: translateY(50px);}
+    100%{transform: translateY(0px);}
+
+}
+.anime:nth-child(2){
+    background-color: blue;
+    animation-name: box2;
+    animation-duration: 4s;
+    animation-iteration-count: 100;
+
+}
+@keyframes box2 {
+    0%{transform: translateY(-50px);}
+    25%{transform: translateY(0px);}
+    50%{transform: translateY(50px);}
+    75%{transform: translateY(0px);}
+    100%{transform: translateY(-50px);}
+
+}
+.anime:nth-child(3){
+    background-color: skyblue;
+    animation-name: box3;
+    animation-duration: 4s;
+    animation-iteration-count: 100;
+
+}
+@keyframes box3 {
+    0%{transform: translateY(0px);}
+    25%{transform: translateY(50px);}
+    50%{transform: translateY(0px);}
+    75%{transform: translateY(-50px);}
+    100%{transform: translateY(0px);}
+
+}
+.anime:nth-child(4){
+    background-color: green;
+    animation-name: box4;
+    animation-duration: 4s;
+    animation-iteration-count: 100;
+
+}
+@keyframes box4 {
+    0%{transform: translateY(50px);}
+    25%{transform: translateY(0px);}
+    50%{transform: translateY(-50px);}
+    75%{transform: translateY(0px);}
+    100%{transform: translateY(50px);}
+
+}
+.anime:nth-child(5){
+    background-color: yellow;
+    animation-name: box5;
+    animation-duration: 4s;
+    animation-iteration-count: 100;
+
+}
+@keyframes box5 {
+    0%{transform: translateY(0px);}
+    25%{transform: translateY(-50px);}
+    50%{transform: translateY(0px);}
+    75%{transform: translateY(50px);}
+    100%{transform: translateY(0px);}
+
+}
+.anime:nth-child(6){
+    background-color: orangered;
+    animation-name: box6;
+    animation-duration: 4s;
+    animation-iteration-count: 100;
+
+}
+@keyframes box6 {
+    0%{transform: translateY(-50px);}
+    25%{transform: translateY(0px);}
+    50%{transform: translateY(50px);}
+    75%{transform: translateY(0px);}
+    100%{transform: translateY(-50px);}
+
+}
+.anime:nth-child(7){
+    background-color: red;
+    animation-name: box7;
+    animation-duration: 4s;
+    animation-iteration-count: 100;
+
+}
+@keyframes box7 {
+    0%{transform: translateY(0px);}
+    25%{transform: translateY(50px);}
+    50%{transform: translateY(0px);}
+    75%{transform: translateY(-50px);}
+    100%{transform: translateY(0px);}
+
+}
+
